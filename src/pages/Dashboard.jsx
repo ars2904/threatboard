@@ -14,7 +14,7 @@ export default function Dashboard() {
 
   const handleClick = (action) => {
     setToast(`${action} clicked!`);
-    setTimeout(() => setToast(""), 2000); // clear after 2s
+    setTimeout(() => setToast(""), 2000); 
   };
 
   return (
