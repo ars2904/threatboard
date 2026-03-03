@@ -12,7 +12,7 @@ export default function Topbar({ openSidebar }) {
       </button>
 
       <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
-        Dashboard
+        Fenrir Security
       </h1>
       
       {/* Empty div to balance spacing on mobile */}
