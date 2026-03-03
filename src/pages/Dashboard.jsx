@@ -4,55 +4,56 @@ import SeverityCard from "../components/dashboard/SeverityCard";
 import { scans } from "../data/scans";
 
 export default function Dashboard() {
+  // Calculate stats dynamically
+  const totalScans = scans.length;
+  const scheduledScans = scans.filter((s) => s.status === "Scheduled").length;
+  const failedScans = scans.filter((s) => s.status === "Failed").length;
+
   return (
     <Layout>
       <div className="space-y-10">
-
         {/* Page Header */}
         <div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            Overview of your organization’s security scans
+            Overview of organization’s security scans
           </p>
         </div>
 
         {/* Organization Summary Card */}
         <div className="bg-white dark:bg-[#1A1A1A] p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
-
             {/* Left Info */}
             <div>
               <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
                 Fenrir Security
               </h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                Owner: Aryan • Last updated 2 minutes ago
+                Owner: Unknown • Last updated 2 minutes ago
               </p>
             </div>
 
             {/* Right Stats */}
             <div className="flex gap-8 text-sm">
-
               <div>
                 <p className="text-gray-500 dark:text-gray-400">Total Scans</p>
                 <p className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                  24
+                  {totalScans}
                 </p>
               </div>
 
               <div>
                 <p className="text-gray-500 dark:text-gray-400">Scheduled</p>
                 <p className="text-xl font-semibold text-yellow-500">
-                  6
+                  {scheduledScans}
                 </p>
               </div>
 
               <div>
                 <p className="text-gray-500 dark:text-gray-400">Failed</p>
                 <p className="text-xl font-semibold text-red-500">
-                  2
+                  {failedScans}
                 </p>
               </div>
-
             </div>
           </div>
         </div>
@@ -72,7 +73,6 @@ export default function Dashboard() {
           </h3>
           <ScanTable scans={scans} />
         </div>
-
       </div>
     </Layout>
   );
