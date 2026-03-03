@@ -38,14 +38,14 @@ export default function ScanTable({ scans }) {
                 onClick={() => navigate(`/scan/${scan.id}`)}
                 className="cursor-pointer hover:bg-gray-100/50 dark:hover:bg-gray-900/30"
               >
-                <td className="px-4 py-3">{scan.name}</td>
+                <td className="px-4 py-3 text-black-500 dark:text-gray-400">{scan.name}</td>
                 <td className="px-4 py-3">
                   <StatusChip status={scan.status} />
                 </td>
                 <td className="px-4 py-3">
                   <ProgressBar value={scan.progress} />
                 </td>
-                <td className="px-4 py-3 hidden md:table-cell">{scan.lastScan}</td>
+                <td className="px-4 py-3 text-black-500 dark:text-gray-400 hidden md:table-cell">{scan.lastScan}</td>
               </tr>
             ))}
           </tbody>
