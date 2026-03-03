@@ -13,7 +13,7 @@ export default function SeverityCard({ title, count, color }) {
         {count}
       </p>
       <p className="text-xs text-gray-400 mt-1">
-        +12% from last scan
+         +12% from last scan
       </p>
     </div>
   );

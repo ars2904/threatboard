@@ -30,7 +30,6 @@ export default function Layout({ children }) {
           onClick={() => setIsOpen(false)}
         />
       )}
-
       {/* Main Content */}
       <div className="flex-1 flex flex-col ">
         {/* Topbar with hamburger */}

@@ -21,4 +21,5 @@ export default function FindingCard({ finding }) {
 
     </div>
   );
+
 }

@@ -27,4 +27,5 @@ export default function StepTracker({ currentStep = 0 }) {
       ))}
     </div>
   );
+  
 }

@@ -1,16 +1,38 @@
-# React + Vite
+# Fenrir Security Frontend Challenge 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview 
 
-Currently, two official plugins are available:
+This is a frontend project built with React and Tailwind CSS. 
+It shows a mock security dashboard with three main screens: Login, Dashboard, and Scan Detail. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup 1. Clone the repo
 
-## React Compiler
+git clone https://github.com/ars2904/threatboard.git 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Install dependencies
 
-## Expanding the ESLint configuration
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Run locally
+
+npm run dev
+
+## Tech Stack
+- React (Vite)
+- Tailwind CSS
+- React Router
+
+## Features
+- Login screen
+- Dashboard with severity stats and recent scans
+- Scan Detail page with progress tracker, logs, and findings
+- Dark mode / Light mode toggle
+- Responsive design
+- Mock data only (no backend)
+
+## Deployment
+Live demo: [your deployed link]
+
+## Notes
+- Buttons like New Scan, Export Report, and Stop Scan show placeholder feedback only.
+- Data is mock and not connected to a backend.

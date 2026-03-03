@@ -6,7 +6,6 @@ import ProgressBar from "../ui/ProgressBar";
 export default function ScanTable({ scans }) {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
-
   const filtered = scans.filter((scan) =>
     scan.name.toLowerCase().includes(query.toLowerCase())
   );

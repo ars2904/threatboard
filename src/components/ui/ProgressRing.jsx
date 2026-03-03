@@ -13,7 +13,7 @@ export default function ProgressRing({ progress = 45 }) {
 
         {/* Background circle */}
         <circle
-          stroke="#2A2F3A"
+          stroke="#15233e"
           fill="transparent"
           strokeWidth="8"
           r={radius}
@@ -39,7 +39,7 @@ export default function ProgressRing({ progress = 45 }) {
       </svg>
 
       {/* Percentage text */}
-      <div className="absolute inset-0 flex items-center justify-center text-lg font-bold">
+      <div className="absolute inset-0 flex items-center justify-center text-lg font-bold text-gray-900 dark:text-gray-100 md:text-xl">
         {progress}%
       </div>
     </div>

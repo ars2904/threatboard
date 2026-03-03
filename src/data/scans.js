@@ -1,4 +1,3 @@
-// src/data/scans.js
 export const scans = [
   {
     id: "1",

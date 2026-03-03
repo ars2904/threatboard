@@ -14,7 +14,6 @@ export default function AppRoutes() {
       
       <Route path="/scans" element={<ScansPage />} />
 
-      
       <Route path="/scan/:id" element={<ScanDetail />} />
       <Route path="/scans/:id" element={<ScanDetail />} />
     </Routes>
