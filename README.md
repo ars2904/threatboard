@@ -31,7 +31,7 @@ npm run dev
 - Mock data only (no backend)
 
 ## Deployment
-Live demo: [your deployed link]
+Live demo: https://threatboard-sigma.vercel.app
 
 ## Notes
 - Buttons like New Scan, Export Report, and Stop Scan show placeholder feedback only.
